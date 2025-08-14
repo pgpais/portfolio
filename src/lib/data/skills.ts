@@ -101,22 +101,22 @@ export const items = [
 		name: 'Python',
 		category: 'pro-lang'
 	}),
-	defineSkill({
-		slug: 'qualitative',
-		color: 'yellow',
-		description: '',
-		logo: Assets.Unknown,
-		name: 'Qualitative Analysis',
-		category: 'research'
-	}),
-	defineSkill({
-		slug: 'quantitative',
-		color: 'yellow',
-		description: '',
-		logo: Assets.Unknown,
-		name: 'Quantitative Analysis',
-		category: 'research'
-	}),
+	// defineSkill({
+	// 	slug: 'qualitative',
+	// 	color: 'yellow',
+	// 	description: '',
+	// 	logo: Assets.Unknown,
+	// 	name: 'Qualitative Analysis',
+	// 	category: 'research'
+	// }),
+	// defineSkill({
+	// 	slug: 'quantitative',
+	// 	color: 'yellow',
+	// 	description: '',
+	// 	logo: Assets.Unknown,
+	// 	name: 'Quantitative Analysis',
+	// 	category: 'research'
+	// }),
 	defineSkill({
 		slug: 'csharp',
 		color: 'blue',
