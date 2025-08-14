@@ -10,7 +10,13 @@ export const items: Array<Publication> = [
 		description:
 			'Gaming has the potential to strengthen familial bonds and enrich shared experiences among families. However, a more complete understanding is needed to maximize benefits, circumvent shared play barriers, and avoid issues such as tensions created by family dynamics (e.g., parental mediation). This study explores the intricate relationship between digital gaming and familial dynamics, investigating how gaming habits within households influence and are influenced by family interactions. Leveraging a thematic analysis approach, we examine discussions on Reddit gaming communities (139 posts along with top comment) related to gaming experiences within families. It highlights how gaming experiences are affected by family life, how games are selected and gaming places are shared, the constraints for sharing gameplay, how games strengthen family member bonds, how family members experience gaming through each other and how games support interaction outside of gameplay. We discuss what games mean to families today, and highlight how some of its characteristics are by design (e.g., co-located cooperative game), while others are unintentional (e.g., relating game components to deceased family members) that we should learn from to create games that potentiate positive shared experiences.',
 		venue: 'Games: Research and Practice (in print)',
-		links: [],
+		links: [
+			{
+				label: 'Read Pre-Print',
+				to: 'https://github.com/pgpais/portfolio/blob/master/pdfs/60698022_File000004_1489927346-1.pdf',
+				newTab: true
+			}
+		],
 		color: 'red',
 		type: 'Research',
 		skills: getSkills('qualitative', 'python'),
