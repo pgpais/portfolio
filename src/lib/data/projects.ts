@@ -12,7 +12,7 @@ export const items: Array<Project> = [
 			'A framework derived from a multi-step systematic analysis of 129 cooperative games with contributions of eleven researchers. LFCG is published as a web application to facilitate use and appropriation. It supports the creation, dissemination and aggregation of game reports and specifications; and enables stakeholders to extend and publish custom versions.',
 		links: [
 			{ to: 'https://www.lfcooperativegames.com', label: 'Website' },
-			{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'Source' }
+			{ to: 'https://github.com/pgpais/live-framework-for-cooperative-games', label: 'Source' }
 		],
 		logo: Assets.LFCG,
 		name: 'Living Framework for Understanding Cooperative Games',
