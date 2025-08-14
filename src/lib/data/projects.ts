@@ -54,6 +54,14 @@ export const items: Array<Project> = [
 			{
 				label: 'Adventurer Gameplay',
 				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTQwLnBuZw==/347x500/JWMQeK.png'
+			},
+			{
+				label: 'Manager Unlock Menu',
+				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-unlock.jpg?raw=true'
+			},
+			{
+				label: 'Manager Processing Menu',
+				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-processing.jpg?raw=true'
 			}
 		]
 	},
@@ -143,7 +151,7 @@ export const items: Array<Project> = [
 		slug: 'reis-de-portugal',
 		color: 'gray',
 		description:
-			"Games for Good 2017 entry - Third place. My first time entering a socially responsible Game Jam. It was a good experiment, however we overscoped the game and ended up not doing much. The idea was to develop a card game where each card is an historic person that you'd acquire after visiting historically relevant sites.",
+			"Games for Good 2017 entry - Third place. My first time entering a socially responsible Game Jam. It was a good experience, however we overscoped the game and ended up not doing much. The idea was to develop a card game where each card is a historic person that you'd acquire after visiting historically relevant sites.",
 		shortDescription:
 			"Games for Good 2017 entry - Third place. My first time entering a socially responsible Game Jam. The idea was to develop a card game where each card is an historic person that you'd acquire after visiting historically relevant sites.",
 		links: [{ to: 'https://github.com/jorgegamedev/reis-de-portugal', label: 'Github' }],
