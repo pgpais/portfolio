@@ -76,7 +76,11 @@ const Assets = {
 	Koala: a('koala.png'),
 	LFCG: a('lfcg.png'),
 	GGJ: a('ggj.png'),
-	Flamehound: a('flamehound.png')
+	Flamehound: a('flamehound.png'),
+	Godot: a('godot.svg'),
+	HappyCode: a('happy-code.png'),
+	NDDV: a('nddv.png'),
+	FCT: a('FCT-dark.png', 'FCT.png')
 };
 
 export default Assets;

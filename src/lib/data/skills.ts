@@ -38,6 +38,22 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
+		slug: 'kotlin',
+		color: 'blue',
+		description: '',
+		logo: Assets.Kotlin,
+		name: 'Kotlin',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'godot',
+		color: 'blue',
+		description: '',
+		logo: Assets.Godot,
+		name: 'Godot',
+		category: 'game-dev'
+	}),
+	defineSkill({
 		slug: 'android',
 		color: 'green',
 		description: '',
