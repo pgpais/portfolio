@@ -1,4 +1,5 @@
 import { items } from '@data/publications';
+export const prerender = true;
 
 export function load({ params }: { params: Record<string, string> }) {
 	if (params.slug) {
