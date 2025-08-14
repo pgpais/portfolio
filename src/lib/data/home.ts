@@ -8,7 +8,7 @@ export const name = 'Pedro';
 export const lastName = 'Pais';
 
 export const description =
-	'Game developer specialising in cooperative and asymmetric play. Experienced in Unity and Godot with published research on game design at top-tier conferences. Skilled in bridging technical development and design to create engaging multiplayer experiences.';
+	'Game developer specialising in cooperative and asymmetric play. Experienced in Unity and Godot with published research on game design and accessibility at top-tier conferences. Skilled in bridging technical development and design to create engaging multiplayer experiences.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{
@@ -17,7 +17,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	},
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
+		link: 'https://www.linkedin.com/in/pgpais/'
 	},
 	{
 		platform: Platform.Email,
@@ -25,4 +25,4 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	}
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
+export const skills = getSkills('unity', 'godot', 'csharp', 'svelte', 'ts', 'tailwind');
