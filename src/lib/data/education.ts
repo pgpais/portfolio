@@ -3,28 +3,40 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'Integrated Masters in Computer Science',
 		description: '',
-		location: 'Tunisia',
+		location: 'Portugal',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'NOVA School of Science and Technology',
+		period: { from: new Date(2015, 0, 1), to: new Date(2021, 5, 1) },
 		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		slug: 'masters',
+		subjects: [
+			'C',
+			'Algorithm',
+			'Algebra',
+			'Python',
+			'Java',
+			'English',
+			'AI',
+			'Unity',
+			'Game Development',
+			'Game Design',
+			'C#'
+		]
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'PhD of Computer Science (Interrupted)',
 		description: '',
-		location: 'USA',
+		location: 'Portugal',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'LASIGE, Faculty of Sciences, University of Lisbon',
+		period: { from: new Date(2022, 0, 1), to: new Date(2025, 0, 1) },
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		slug: 'PhD',
+		subjects: ['Godot', 'Game Development', 'Game Design', 'C#', 'Cooperative Games']
 	}
 ];
 

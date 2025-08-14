@@ -16,6 +16,7 @@ export enum ContractType {
 	FullTime = 'Full-time',
 	PartTime = 'Part-time',
 	SelfEmployed = 'Self-employed',
+	Scholarship = 'Scholarship',
 	Freelance = 'Freelance',
 	Contract = 'Contract',
 	Internship = 'Internship'
@@ -67,6 +68,15 @@ export interface Experience<S extends string = string> extends Project<S> {
 	company: string;
 	location: string;
 	contract: ContractType;
+}
+
+export interface Publication<S extends string = string> extends Project<S> {
+	authors: Array<string>;
+	venue?: string;
+	abstract?: string;
+	funding?: string;
+	project: string;
+	DOI: string;
 }
 
 export interface Education<S extends string = string> extends Item<S> {

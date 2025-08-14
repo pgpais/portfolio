@@ -9,7 +9,7 @@ const categories = [
 	defineSkillCategory({ name: 'Programming Languages', slug: 'pro-lang' }),
 	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
 	defineSkillCategory({ name: 'Libraries', slug: 'library' }),
-	defineSkillCategory({ name: 'Langauges', slug: 'lang' }),
+	defineSkillCategory({ name: 'Languages', slug: 'lang' }),
 	defineSkillCategory({ name: 'Databases', slug: 'db' }),
 	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
 	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
@@ -17,7 +17,9 @@ const categories = [
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
+	defineSkillCategory({ name: 'Game Development', slug: 'game-dev' }),
+	defineSkillCategory({ name: 'Research', slug: 'research' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -36,22 +38,84 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
-		slug: 'js',
+		slug: 'android',
+		color: 'green',
+		description: '',
+		logo: Assets.Android,
+		name: 'Android',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'java',
 		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: '',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'game-design',
+		color: 'yellow',
+		description: '',
 		logo: Assets.JavaScript,
-		name: 'Javascript',
+		name: 'JavaScript',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'python',
+		color: 'blue',
+		description: '',
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'qualitative',
+		color: 'yellow',
+		description: '',
+		logo: Assets.Unknown,
+		name: 'Qualitative Analysis',
+		category: 'research'
+	}),
+	defineSkill({
+		slug: 'quantitative',
+		color: 'yellow',
+		description: '',
+		logo: Assets.Unknown,
+		name: 'Quantitative Analysis',
+		category: 'research'
+	}),
+	defineSkill({
+		slug: 'csharp',
+		color: 'blue',
+		description: '',
+		logo: Assets.Csharp,
+		name: 'C#',
 		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'ts',
 		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: '',
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'unity',
+		color: 'cyan',
+		description: '',
+		logo: Assets.Unity,
+		name: 'Unity',
+		category: 'game-dev'
+	}),
+	defineSkill({
+		slug: 'supabase',
+		color: 'green',
+		description: '',
+		logo: Assets.Supabase,
+		name: 'Supabase',
+		category: 'db'
 	}),
 	defineSkill({
 		slug: 'css',

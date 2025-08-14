@@ -70,7 +70,13 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	Supabase: a('supabase.svg'),
+	Unity: a('unity.svg'),
+	Koala: a('koala.png'),
+	LFCG: a('lfcg.png'),
+	GGJ: a('ggj.png'),
+	Flamehound: a('flamehound.png')
 };
 
 export default Assets;

@@ -72,7 +72,9 @@
 									<CardDivider />
 									<div class="row items-center gap-2">
 										<UIcon icon="i-carbon-time" />
-										{computeExactDuration(education.period.from, education.period.to)}
+										<!-- {computeExactDuration(education.period.from, education.period.to)} -->
+										{education.period.from.getFullYear()} -
+										{education.period.to ? education.period.to.getFullYear() : 'Present'}
 									</div>
 									<CardDivider />
 								</div>

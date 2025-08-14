@@ -4,14 +4,24 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [
 	{
-		slug: 'open-sourcer',
-		company: 'Self-employed',
+		slug: 'phd-fct',
+		company: 'Fundação para a Ciência e Tecnologia',
 		description: 'Creating awesome tools for developers.',
-		contract: ContractType.SelfEmployed,
+		contract: ContractType.Scholarship,
 		type: 'Software Development',
-		location: 'Home',
+		location: 'LASIGE, Faculty of Sciences, University of Lisbon',
 		period: { from: new Date() },
-		skills: getSkills('ts', 'js'),
+		skills: getSkills(
+			'svelte',
+			'ts',
+			'unity',
+			'c#',
+			'godot',
+			'game-design',
+			'python',
+			'qualitative',
+			'quantitative'
+		),
 		name: 'Open Source Developer',
 		color: 'red',
 		links: [],
@@ -42,7 +52,7 @@ export const items: Array<Experience> = [
 		location: 'Home',
 		period: { from: new Date(2022, 0, 1), to: new Date() },
 		skills: getSkills('css', 'html', 'js'),
-		name: 'Junior Freelancer',
+		name: 'Happy Code',
 		color: 'green',
 		links: [],
 		logo: Assets.Unknown,

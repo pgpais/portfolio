@@ -4,36 +4,23 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
-		color: '#5e95e3',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
-	},
-	{
-		slug: 'slick-portfolio-svelte',
-		color: '#ff3e00',
+		slug: 'lfcg',
+		color: 'cyan',
 		description:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
 		shortDescription:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+		links: [
+			{ to: 'https://www.lfcooperativegames.com', label: 'Website' },
+			{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'Source' }
+		],
+		logo: Assets.LFCG,
+		name: 'Living Framework for Understanding Cooperative Games',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		skills: getSkills('svelte', 'ts', 'tailwind', 'supabase'),
+		type: 'Website',
 		screenshots: [
 			{
 				label: 'screen 1',
@@ -60,6 +47,90 @@ export const items: Array<Project> = [
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
 		]
+	},
+	{
+		slug: 'koala-boutique',
+		color: 'orangered',
+		description:
+			"An asynchronous cooperative game made in Unity in the context of my master's thesis regarding constraints in playing with the family. It consists of two modules: a Roguelike module played on PC and a Manager module played on Mobile. The game is designed to be played by a parent and a child, where the parent manages the shop and the child goes on adventures to collect items.",
+		shortDescription:
+			'Asynchronous Cooperative game made in Unity with two modules, a Roguelike module played on PC and a Manager module played on Mobile.',
+		links: [
+			{ to: 'https://techpeople.itch.io/koala-boutique', label: 'Itch.io' },
+			{ to: 'https://github.com/pgpais/Koala-Boutique-Adventurer', label: 'Adventurer Github' },
+			{
+				to: 'https://play.google.com/store/apps/details?id=com.techpeople.familyPlay',
+				label: 'Play Store'
+			},
+			{ to: 'https://github.com/pgpais/Koala-Boutique-Parent', label: 'Manager Github' }
+		],
+		logo: Assets.Koala,
+		name: 'Koala Boutique',
+		period: {
+			from: new Date(2021, 0, 1)
+		},
+		skills: getSkills('unity', 'csharp', 'game-design', 'game-development'),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'Adventurer Main Menu',
+				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTMxLnBuZw==/original/i%2BUBuP.png'
+			},
+			{
+				label: 'Adventurer Gameplay',
+				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTQwLnBuZw==/347x500/JWMQeK.png'
+			}
+		]
+	},
+	{
+		slug: 'roboto-repairaton',
+		color: 'orange',
+		description:
+			'Global Game Jam 2020 entry. A cooperative game where players must work together through chaos and collisions to assemble the required robot. I implemented most of the gameplay features and the chaos event system (flashing lights and fast moving conveyor belts, for example). ',
+		shortDescription:
+			'Global Game Jam 2020 entry. A cooperative game where players must work together through chaos and collisions to assemble the required robot. I implemented most of the gameplay features and the chaos event system (flashing lights and fast moving conveyor belts, for example).',
+		links: [
+			{
+				to: 'https://globalgamejam.org/2020/games/untitled-robot-game-1',
+				label: 'Global Game Jam'
+			},
+			{ to: 'https://github.com/pgpais/Roboto-Repairaton', label: 'Github' }
+		],
+		logo: Assets.GGJ,
+		name: 'Roboto Repairaton',
+		period: {
+			from: new Date(2020, 0, 1),
+			to: new Date(2020, 0, 31)
+		},
+		skills: getSkills('unity', 'csharp', 'game-design', 'game-development'),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'Banner',
+				src: 'https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/featured_image/2020/02/137150/ggjthumbnail_0.png?itok=QXYxqFbU&timestamp=1580674788'
+			},
+			{
+				label: 'Gameplay',
+				src: 'https://ggj.s3.amazonaws.com/styles/game_content__wide/games/screenshots/2020/02/137150/rrscreenshot2.png?itok=2QyNmV-0&timestamp=1580697549'
+			}
+		]
+	},
+	{
+		slug: 'flamehound',
+		color: 'orange',
+		description:
+			'Bachelor final project. In this project we had to develop a service where civilians could report fires (and their degree of severity). This project had three fronts. The server was developed in Java (with the help of Google App Engine), the browser Front-end was developed in ReactJS, we also built a mobile app for Android ',
+		shortDescription:
+			'Bachelor final project. In this project we had to develop a service where civilians could report fires (and their degree of severity). This project had three fronts. The server was developed in Java (with the help of Google App Engine), the browser Front-end was developed in ReactJS, we also built a mobile app for Android ',
+		links: [{ to: 'https://github.com/pgpais/FlameHound', label: 'Github' }],
+		logo: Assets.Flamehound,
+		name: 'Flamehound',
+		period: {
+			from: new Date(2018, 0, 1),
+			to: new Date(2018, 0, 31)
+		},
+		skills: getSkills('java', 'google-services', 'html', 'css', 'reactjs', 'android'),
+		type: 'Website'
 	}
 ];
 
