@@ -1,6 +1,6 @@
 import Assets from './assets';
 import { getSkills } from './skills';
-import { ContractType, type Publication } from '../types';
+import { type Publication } from '../types';
 
 export const items: Array<Publication> = [
 	{
