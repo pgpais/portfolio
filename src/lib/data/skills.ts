@@ -81,7 +81,7 @@ export const items = [
 		slug: 'game-design',
 		color: 'yellow',
 		description: '',
-		logo: Assets.Unknown,
+		logo: Assets.JavaScript,
 		name: 'JavaScript',
 		category: 'pro-lang'
 	}),
