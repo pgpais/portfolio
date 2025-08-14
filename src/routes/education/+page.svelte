@@ -76,6 +76,32 @@
 										{education.period.from.getFullYear()} -
 										{education.period.to ? education.period.to.getFullYear() : 'Present'}
 									</div>
+									{#if education.grade}
+										<CardDivider />
+										<div class="row items-center gap-2">
+											<UIcon icon="i-carbon-pen" classes="text-1.25em" />
+											Course Grade: {education.grade}
+										</div>
+									{/if}
+									{#if education.thesis}
+										<CardDivider />
+										<div class="row items-center gap-2">
+											<UIcon icon="i-carbon-book" classes="text-1.25em" />
+											<a
+												href={education.thesis.url ? education.thesis.url : undefined}
+												target="_blank"
+												class="text-[var(--accent-text)]"
+											>
+												Thesis: {education.thesis.title}
+											</a>
+										</div>
+										{#if education.thesis.grade}
+											<div class="row items-center gap-2 mt-2">
+												<UIcon icon="i-carbon-pen" classes="text-1.25em" />
+												Grade: {education.thesis.grade}
+											</div>
+										{/if}
+									{/if}
 									<CardDivider />
 								</div>
 								<div class="row flex-wrap gap-1">

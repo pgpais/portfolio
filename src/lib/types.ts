@@ -69,6 +69,7 @@ export interface Experience<S extends string = string> extends Project<S> {
 	company: string;
 	location: string;
 	contract: ContractType;
+	reference?: string;
 }
 
 export interface Publication<S extends string = string> extends Project<S> {
@@ -89,4 +90,12 @@ export interface Education<S extends string = string> extends Item<S> {
 	};
 	subjects: Array<string>;
 	degree: string;
+	grade?: string;
+	thesis?: {
+		title: string;
+		description?: string;
+		url?: string;
+		year?: number;
+		grade?: string;
+	};
 }

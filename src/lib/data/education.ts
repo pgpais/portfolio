@@ -3,7 +3,7 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'PhD of Computer Science (Interrupted)',
+		degree: 'PhD in Computer Science (Interrupted)',
 		description: '',
 		location: 'Portugal',
 		logo: Assets.Unknown,
@@ -36,7 +36,13 @@ export const items: Array<Education> = [
 			'Game Development',
 			'Game Design',
 			'C#'
-		]
+		],
+		grade: '15',
+		thesis: {
+			title: 'Asymmetric Roles in Intergenerational Games',
+			grade: '18',
+			url: 'http://hdl.handle.net/10362/138804'
+		}
 	}
 ];
 

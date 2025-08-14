@@ -3,6 +3,10 @@ export const items = [
 	{ title: 'Publications', to: '/publications', icon: 'i-carbon-report' },
 	{ title: 'Experience', to: '/experience', icon: 'i-carbon-industry' },
 	{ title: 'Education', to: '/education', icon: 'i-carbon-education' },
-	{ title: 'Resumé', to: '/resume', icon: 'i-carbon-document-vertical' },
-	{ title: 'Skills', to: '/skills', icon: 'i-carbon-software-resource-cluster' }
+	{ title: 'Skills', to: '/skills', icon: 'i-carbon-software-resource-cluster' },
+	{
+		title: 'Resumé',
+		to: 'https://github.com/pgpais/Curriculum-Vitae/blob/master/Pedro_Pais_CV.pdf',
+		icon: 'i-carbon-document-vertical'
+	}
 ] as const;

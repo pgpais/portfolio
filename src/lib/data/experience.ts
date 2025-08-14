@@ -7,7 +7,7 @@ export const items: Array<Experience> = [
 		slug: 'phd-fct',
 		company: 'Fundação para a Ciência e Tecnologia',
 		description:
-			'PhD research on cooperative games, their design structures and how they affect players, particularly in the context of families. The research is focused on understanding how different game mechanics can influence player behavior and interaction in cooperative settings. I made multiple publications in top venues, including CHI and CSCW. The main goal was to explore how cooperative games can be designed to promote positive social interactions.',
+			'PhD research on cooperative games, their design structures and how they affect players, particularly in the context of families. The research is focused on understanding how different game mechanics can influence player behavior and interaction in cooperative settings. I made multiple publications in top venues, including CHI and CSCW. The main goal was to explore how cooperative games can be designed to promote positive social interactions. (FCT Scholarship ref: 2022.12448.BD)',
 		contract: ContractType.Scholarship,
 		type: 'Software Development',
 		location: 'LASIGE, Faculty of Sciences, University of Lisbon',
@@ -35,7 +35,7 @@ export const items: Array<Experience> = [
 		slug: 'lemon-fct',
 		company: 'Fundação para a Ciência e Tecnologia',
 		description:
-			"A study that analyzes handwriting through a special pen called HandSpy which digitizes what we are writing. My job was to develop an Android app to show the participants a made up symbol they'd have to copy. There were other training types that implied an interaction with the app. Results of these training sessions were sent to a Firebase database for further analysis.",
+			"A study that analyzes handwriting through a special pen called HandSpy which digitizes what we are writing. My job was to develop an Android app to show the participants a made up symbol they'd have to copy. There were other training types that implied an interaction with the app. Results of these training sessions were sent to a Firebase database for further analysis. (Project ID: PTDC/PSI-GER/3281/2020)",
 		contract: ContractType.Scholarship,
 		type: 'Software Development',
 		location: 'LASIGE, Faculty of Sciences, University of Lisbon',
