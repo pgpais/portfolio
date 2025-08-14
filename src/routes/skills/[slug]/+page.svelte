@@ -2,6 +2,7 @@
 	import { title } from '@data/skills';
 	import * as projects from '@data/projects';
 	import * as experiences from '@data/experience';
+	import * as publications from '@data/publications';
 
 	import { base } from '$app/paths';
 	import { getAssetURL } from '$lib/data/assets';
@@ -21,7 +22,7 @@
 		display: string;
 		name: string;
 		img: string;
-		type: 'projects' | 'experience';
+		type: 'project' | 'experience' | 'publication';
 		url: string;
 	};
 
@@ -42,7 +43,7 @@
 					img: getAssetURL(item.logo),
 					display: `${item.name} (${item.type})`,
 					name: item.name,
-					type: 'projects',
+					type: 'project',
 					url: `/projects/${item.slug}`
 				});
 			}
@@ -56,6 +57,18 @@
 					name: item.name,
 					type: 'experience',
 					url: `/experience/${item.slug}`
+				});
+			}
+		});
+
+		publications.items.forEach((item) => {
+			if (item.skills.some((tech) => tech.slug === skill.slug)) {
+				out.push({
+					img: getAssetURL(item.logo),
+					display: `${item.name} (${item.type})`,
+					name: item.name,
+					type: 'publication',
+					url: `/publications/${item.slug}`
 				});
 			}
 		});
@@ -81,22 +94,22 @@
 			<Banner img={getAssetURL(data.skill.logo)}>
 				<MainTitle>{data.skill.name}</MainTitle>
 			</Banner>
-			<div class="pt-3 pb-1 overflow-x-hidden w-full">
-				<div class="px-10px m-y-5">
-					{#if data.skill.description}
+			{#if data.skill.description}
+				<div class="pt-3 pb-1 overflow-x-hidden w-full">
+					<div class="px-10px m-y-5">
 						<Markdown content={data.skill.description ?? 'This place is yet to be filled...'} />
-					{:else}
+						<!-- {:else}
 						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
 							<UIcon icon="i-carbon-text-font" classes="text-3.5em" />
 							<p class="font-300">No description</p>
-						</div>
-					{/if}
+						</div> -->
+					</div>
 				</div>
-			</div>
-			<div class="self-stretch mb-2">
-				<CardDivider />
-			</div>
-			<div class="flex flex-row gap-1 self-stretch flex-wrap ">
+				<div class="self-stretch">
+					<CardDivider />
+				</div>
+			{/if}
+			<div class="flex flex-row gap-1 self-stretch flex-wrap mt-2">
 				<div class="px-10px">
 					{#each related as item}
 						<Chip
