@@ -80,7 +80,8 @@ const Assets = {
 	Godot: a('godot.svg'),
 	HappyCode: a('happy-code.png'),
 	NDDV: a('nddv.png'),
-	FCT: a('FCT_white_background.jpg')
+	FCT: a('FCT_white_background.jpg'),
+	novasst: a('nova-sst.jpg')
 };
 
 export default Assets;

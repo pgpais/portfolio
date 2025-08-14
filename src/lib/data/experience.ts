@@ -48,6 +48,23 @@ export const items: Array<Experience> = [
 		shortDescription: 'Developed Android app for handwriting analysis study; Integrated Firebase.'
 	},
 	{
+		slug: 'ddj-workshops',
+		company: 'University of Lisbon',
+		description:
+			'Organized and conducted  yearly workshops on game development, focusing on Unity and Godot. The goal was to teach students the basics of game development and help them get started with their own projects. The workshops were well received and helped many students to get started with game development.',
+		contract: ContractType.Other,
+		type: 'Teaching',
+		location: 'LASIGE, Faculty of Sciences',
+		period: { from: new Date(2021, 0, 1), to: new Date(2025, 0, 1) },
+		skills: getSkills('unity', 'godot', 'game-design', 'csharp'),
+		name: 'Game Development Workshops',
+		color: 'red',
+		links: [],
+		logo: Assets.Unknown,
+		shortDescription:
+			'Organized and conducted yearly workshops on game development, focusing on Unity and Godot. The goal was to teach students the basics of game development and help them get started with their own projects.'
+	},
+	{
 		slug: 'nddv',
 		company: 'Núcleo de Design e Desenvolvimento de Videojogos',
 		description:
@@ -56,7 +73,7 @@ export const items: Array<Experience> = [
 		type: 'Software Development',
 		location: 'NOVA School of Science and Technology',
 		period: { from: new Date(2020, 0, 1), to: new Date(2021, 0, 1) },
-		skills: getSkills('android', 'python', 'kotlin'),
+		skills: getSkills('unity', 'game-design', 'csharp'),
 		name: 'President of the University Game Development group',
 		color: 'red',
 		links: [],

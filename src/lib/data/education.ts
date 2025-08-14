@@ -3,6 +3,18 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
+		degree: 'PhD of Computer Science (Interrupted)',
+		description: '',
+		location: 'Portugal',
+		logo: Assets.Unknown,
+		name: '',
+		organization: 'LASIGE, Faculty of Sciences, University of Lisbon',
+		period: { from: new Date(2022, 0, 1), to: new Date(2025, 0, 1) },
+		shortDescription: '',
+		slug: 'PhD',
+		subjects: ['Unity', 'Godot', 'Game Development', 'Game Design', 'C#', 'Cooperative Games']
+	},
+	{
 		degree: 'Integrated Masters in Computer Science',
 		description: '',
 		location: 'Portugal',
@@ -25,18 +37,6 @@ export const items: Array<Education> = [
 			'Game Design',
 			'C#'
 		]
-	},
-	{
-		degree: 'PhD of Computer Science (Interrupted)',
-		description: '',
-		location: 'Portugal',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'LASIGE, Faculty of Sciences, University of Lisbon',
-		period: { from: new Date(2022, 0, 1), to: new Date(2025, 0, 1) },
-		shortDescription: '',
-		slug: 'PhD',
-		subjects: ['Godot', 'Game Development', 'Game Design', 'C#', 'Cooperative Games']
 	}
 ];
 
