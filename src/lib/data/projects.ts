@@ -7,9 +7,9 @@ export const items: Array<Project> = [
 		slug: 'lfcg',
 		color: 'cyan',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'A framework derived from a multi-step systematic analysis of 129 cooperative games with contributions of eleven researchers. LFCG is published as a web application to facilitate use and appropriation. It supports the creation, dissemination and aggregation of game reports and specifications; and enables stakeholders to extend and publish custom versions.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'A framework derived from a multi-step systematic analysis of 129 cooperative games with contributions of eleven researchers. LFCG is published as a web application to facilitate use and appropriation. It supports the creation, dissemination and aggregation of game reports and specifications; and enables stakeholders to extend and publish custom versions.',
 		links: [
 			{ to: 'https://www.lfcooperativegames.com', label: 'Website' },
 			{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'Source' }
@@ -21,32 +21,7 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('svelte', 'ts', 'tailwind', 'supabase'),
 		type: 'Website',
-		screenshots: [
-			{
-				label: 'screen 1',
-				src: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '2',
-				src: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '3',
-				src: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '4',
-				src: 'https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '5',
-				src: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '6',
-				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			}
-		]
+		screenshots: []
 	},
 	{
 		slug: 'koala-boutique',
@@ -88,7 +63,7 @@ export const items: Array<Project> = [
 		description:
 			'Global Game Jam 2020 entry. A cooperative game where players must work together through chaos and collisions to assemble the required robot. I implemented most of the gameplay features and the chaos event system (flashing lights and fast moving conveyor belts, for example). ',
 		shortDescription:
-			'Global Game Jam 2020 entry. A cooperative game where players must work together through chaos and collisions to assemble the required robot. I implemented most of the gameplay features and the chaos event system (flashing lights and fast moving conveyor belts, for example).',
+			'Global Game Jam 2020 entry. I implemented most of the gameplay features and the chaos event system (flashing lights and fast moving conveyor belts, for example).',
 		links: [
 			{
 				to: 'https://globalgamejam.org/2020/games/untitled-robot-game-1',
@@ -131,6 +106,98 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('java', 'google-services', 'html', 'css', 'reactjs', 'android'),
 		type: 'Website'
+	},
+	{
+		slug: 'insection',
+		color: 'orange',
+		description:
+			'Global Game Jam 2018 entry. "The President has the Nuclear Launch Codes, and you\'re going to steal them! We have developed a special nanobot which can decode brain signals and *transmit* them to you, at a safe location." In this jam we made a typing game projected on the back of the mosquito nanobot. It was my first time contacting with FMod and rendering camera views on textures.',
+		shortDescription:
+			'Global Game Jam 2018 entry. In this jam we made a typing game projected on the back of the mosquito nanobot. It was my first time contacting with FMod and rendering camera views on textures.',
+		links: [
+			{
+				to: 'https://v3.globalgamejam.org/2018/games/insecton',
+				label: 'Global Game Jam'
+			}
+		],
+		logo: Assets.GGJ,
+		name: 'INSECT!ON',
+		period: {
+			from: new Date(2018, 0, 1),
+			to: new Date(2018, 0, 31)
+		},
+		skills: getSkills('unity', 'csharp', 'game-design', 'game-development'),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'Banner',
+				src: 'https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/game/featured_image/untitled_45.png?itok=cs5PU9N6&timestamp=1517156022'
+			},
+			{
+				label: 'Gameplay',
+				src: 'https://ggj.s3.amazonaws.com/styles/game_content__wide/games/screenshots/untit1led.png?itok=Ucc4CNjc&timestamp=1517156022'
+			}
+		]
+	},
+	{
+		slug: 'reis-de-portugal',
+		color: 'gray',
+		description:
+			"Games for Good 2017 entry - Third place. My first time entering a socially responsible Game Jam. It was a good experiment, however we overscoped the game and ended up not doing much. The idea was to develop a card game where each card is an historic person that you'd acquire after visiting historically relevant sites.",
+		shortDescription:
+			"Games for Good 2017 entry - Third place. My first time entering a socially responsible Game Jam. The idea was to develop a card game where each card is an historic person that you'd acquire after visiting historically relevant sites.",
+		links: [{ to: 'https://github.com/jorgegamedev/reis-de-portugal', label: 'Github' }],
+		logo: Assets.GGJ,
+		name: 'Reis de Portugal',
+		period: {
+			from: new Date(2017, 0, 1),
+			to: new Date(2017, 0, 31)
+		},
+		skills: getSkills('unity', 'csharp', 'game-design', 'game-development'),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'Logo',
+				src: 'https://github.com/jorgegamedev/reis-de-portugal/blob/master/GFF-Unity/Assets/Sprites/Logo2.png?raw=true'
+			},
+			{
+				label: 'Card mockup',
+				src: 'https://github.com/jorgegamedev/reis-de-portugal/blob/master/GFF-Unity/Assets/Sprites/Card%20example%20mockup.png?raw=true'
+			}
+		]
+	},
+	{
+		slug: 'manbat',
+		color: 'red',
+		description:
+			'Global Game Jam 2017 entry. "A 2D side-scroller where you only see sound. Daredevil style." I implemented most of the gameplay in this platformer Jam entry.',
+		shortDescription:
+			'Global Game Jam 2017 entry. "A 2D side-scroller where you only see sound. Daredevil style." I implemented most of the gameplay in this platformer Jam entry.',
+		links: [
+			{
+				to: 'https://v3.globalgamejam.org/2017/games/manbat',
+				label: 'Global Game Jam'
+			},
+			{ to: 'https://github.com/pgpais/ManBat', label: 'Github' }
+		],
+		logo: Assets.GGJ,
+		name: 'Manbat',
+		period: {
+			from: new Date(2017, 0, 1),
+			to: new Date(2017, 0, 31)
+		},
+		skills: getSkills('unity', 'csharp', 'game-design', 'game-development'),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'Logo',
+				src: 'https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/game/featured_image/manbat_1.png?itok=h795v91x&timestamp=1485098590'
+			},
+			{
+				label: 'Gameplay',
+				src: 'https://ggj.s3.amazonaws.com/styles/game_content__wide/games/screenshots/sem_titulo_0.png?itok=5ZT0zoDC&timestamp=1485085787'
+			}
+		]
 	}
 ];
 

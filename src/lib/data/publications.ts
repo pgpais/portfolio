@@ -62,7 +62,7 @@ export const items: Array<Publication> = [
 		],
 		color: 'purple',
 		type: 'Research',
-		skills: getSkills('ts', 'supabase', 'svelte', 'qualitative', 'python'),
+		skills: getSkills('ts', 'supabase', 'svelte', 'qualitative', 'python', 'tailwind'),
 		logo: Assets.Unknown,
 		shortDescription:
 			'We introduce the Living Framework for Cooperative Games (LFCG), a framework derived from a multi-step systematic analysis of 129 cooperative games with contributions of eleven researchers. We describe how LFCG can be used as a tool for analyses and ideation, and as a shared language for describing a game’s design.',

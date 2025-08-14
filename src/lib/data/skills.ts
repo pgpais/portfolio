@@ -38,6 +38,14 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
+		slug: 'tailwind',
+		color: 'blue',
+		description: '',
+		logo: Assets.Tailwind,
+		name: 'Tailwind',
+		category: 'framework'
+	}),
+	defineSkill({
 		slug: 'kotlin',
 		color: 'blue',
 		description: '',
@@ -73,7 +81,7 @@ export const items = [
 		slug: 'game-design',
 		color: 'yellow',
 		description: '',
-		logo: Assets.JavaScript,
+		logo: Assets.Unknown,
 		name: 'JavaScript',
 		category: 'pro-lang'
 	}),
