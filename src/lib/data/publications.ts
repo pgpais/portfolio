@@ -4,7 +4,7 @@ import { ContractType, type Publication } from '../types';
 
 export const items: Array<Publication> = [
 	{
-		slug: 'family-reddit',
+		slug: 'reddit',
 		name: 'The Interplay of Family Life and Digital Gaming',
 		author: 'First Author',
 		description:
