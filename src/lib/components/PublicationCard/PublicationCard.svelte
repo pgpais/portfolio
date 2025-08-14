@@ -31,7 +31,7 @@
 <Card
 	margin="0px 0px 20px 0px"
 	tiltDegree={2}
-	href={`${base}/publications/${publication.slug}`}
+	href={publication.DOI ? publication.DOI : undefined}
 	color={publication.color}
 >
 	<div class="col md:flex-row items-start gap-5 md:gap-1">
@@ -53,13 +53,24 @@
 				</div> -->
 			</div>
 			<div class="text-[var(--text)] text-[0.9em]">
-				<div class="row items-center gap-2">
-					<UIcon icon="i-carbon-person" classes="text-1.25em" />
-					{publication.authors}
+				<div class="row-left flex-wrap text-[0.9em] text-[var(--tertiary-text)] m-b-2">
+					{#each publication.links as item}
+						<Chip href={item.to}>
+							<div class="row-center gap-2">
+								<UIcon icon="i-carbon-link" />
+								<span>{item.label}</span>
+							</div>
+						</Chip>
+					{/each}
 				</div>
 				<CardDivider />
 				<div class="row items-center gap-2">
-					<UIcon icon="i-carbon-location" classes="text-1.25em" />
+					<UIcon icon="i-carbon-pen" classes="text-1.25em" />
+					{publication.author}
+				</div>
+				<CardDivider />
+				<div class="row items-center gap-2">
+					<UIcon icon="i-carbon-idea" classes="text-1.25em" />
 					{publication.venue}
 				</div>
 				<CardDivider />

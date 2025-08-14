@@ -72,12 +72,12 @@ export interface Experience<S extends string = string> extends Project<S> {
 }
 
 export interface Publication<S extends string = string> extends Project<S> {
-	authors: Array<string>;
+	author: 'First Author' | 'Co-Author' | 'Editor';
 	venue?: string;
 	abstract?: string;
 	funding?: string;
 	project: string;
-	DOI: string;
+	DOI?: string;
 }
 
 export interface Education<S extends string = string> extends Item<S> {
