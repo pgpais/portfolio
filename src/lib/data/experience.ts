@@ -32,6 +32,23 @@ export const items: Array<Experience> = [
 			'Research on cooperative games, their design structures, how they affect players, and how they can be designed to promote positive social interactions.'
 	},
 	{
+		slug: 'playfam',
+		name: "PlayFam - Plug n' Play: Exploring Asymmetry and Modularity for Inclusive Game Design",
+		period: { from: new Date(2023, 0, 1), to: new Date(2025, 0, 1) },
+		company: 'Fundação para a Ciência e Tecnologia',
+		contract: ContractType.Other,
+		type: 'Research',
+		location: 'LASIGE, Faculty of Sciences, University of Lisbon',
+		skills: getSkills('csharp', 'godot', 'game-design', 'python', 'svelte', 'ts'),
+		color: 'red',
+		links: [],
+		logo: Assets.FCT,
+		shortDescription:
+			"In this project, we explored how to decouple the gameplay experience to cater to different sets of constraints simultaneously, while maintaining the benefits of shared play. PlayFam's ultimate goal was to enable any two or more people to play together. The project culminated in a comprehensive framework (LFCG) that has the potential to impact how inclusive game design is approached, informing the work of researchers (e.g., to explore wider benefits of shared play) and designers/developers in industry wishing to design games that bring different players together.",
+		description:
+			"PlayFam sought to establish a comprehensive framework for the design of inclusive digital games through modular, asymmetric game design, enabling heterogeneous groups (e.g. families, mixed-ability groups) to play together, regardless of the constraints they face to gaming. Games are typically designed for a specific target audience, with a narrowly defined set of expectations that are placed on players (e.g. sighted strategy gamer). In this project, we explored how to decouple the gameplay experience to cater to different sets of constraints simultaneously, while maintaining the benefits of shared play. The approach is inspired by ability-based design where there is a shift from “what can everyone do?” to “what can a person do?”, emphasizing individual abilities, rather than their limitations/disabilities. For game design, we can start to envision asymmetric experiences that go beyond abilities and cater to complex sets constraints. PlayFam's ultimate goal was to enable any two or more people to play together. The project culminated in a comprehensive framework (LFCG) that has the potential to impact how inclusive game design is approached, informing the work of researchers (e.g., to explore wider benefits of shared play) and designers/developers in industry wishing to design games that bring different players together."
+	},
+	{
 		slug: 'lemon-fct',
 		company: 'Fundação para a Ciência e Tecnologia',
 		description:

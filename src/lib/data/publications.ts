@@ -33,7 +33,7 @@ export const items: Array<Publication> = [
 		author: 'First Author',
 		description:
 			"For families, where abilities, motivations, and availability vary widely, opportunities for intergenerational play are limited. Designing games that cater to these differences remains an open challenge. In this paper, we first identify barriers related with time and expertise. Next, we propose asymmetric game design and asynchronous play to reconcile children's and adults' requirements; and interdependent gameplay mechanics to foster real-world interactions. Following this approach, we designed a testbed game and conducted a mixed-methods remote study with six pairs of adult-child family members. Our results showcase how asymmetric, asynchronous experiences can be leveraged to create novel gaming experiences that meet the requirements of family play. We discuss how interdependent progress can be designed to promote real-world interactions, creating pervasive conversational topics that permeate the family routine.",
-		venue: "CSCW '24",
+		venue: "Computer-Supported Cooperative Work '24",
 		links: [
 			{
 				to: 'https://techandpeople.github.io/downloads/Promoting_Family_Play_through_Asymmetric_Game_Design.pdf',
