@@ -62,7 +62,7 @@ export const items: Array<Project> = [
 			},
 			{
 				label: 'Adventurer Gameplay',
-				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTQwLnBuZw==/347x500/JWMQeK.png'
+				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTQwLnBuZw==/original/cCUUJi.png'
 			},
 			{
 				label: 'Manager Unlock Menu',
