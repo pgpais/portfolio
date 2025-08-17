@@ -24,7 +24,7 @@ export const items: Array<Experience> = [
 			'quantitative',
 			'godot'
 		),
-		name: 'PhD Scholarship (interrupted)',
+		name: 'PhD Scholarship',
 		color: 'red',
 		links: [],
 		logo: Assets.FCT,
