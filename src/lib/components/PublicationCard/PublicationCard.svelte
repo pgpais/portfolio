@@ -43,14 +43,16 @@
 				>
 					<CardTitle title={`${publication.name}`} />
 				</h3>
-				<!-- <div class="row flex-wrap items-start m-b-2 gap-1 text-0.9em font-300">
-					{#each info as item}
-						<Chip>
-							<UIcon icon={item.icon} />
-							<span class="m-l-1">{item.label}</span>
-						</Chip>
-					{/each}
-				</div> -->
+				{#if publication.awards}
+					<div class="row flex-wrap items-start m-b-2 gap-1 text-1em font-300">
+						{#each publication.awards as item}
+							<Chip>
+								<UIcon icon="i-carbon-trophy-filled" />
+								<span class="m-l-1">{item.name}</span>
+							</Chip>
+						{/each}
+					</div>
+				{/if}
 			</div>
 			<div class="text-[var(--text)] text-[0.9em]">
 				<div class="row-left flex-wrap text-[0.9em] text-[var(--tertiary-text)] m-b-2">

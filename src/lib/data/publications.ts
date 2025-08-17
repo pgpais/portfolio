@@ -96,7 +96,8 @@ export const items: Array<Publication> = [
 		period: { from: new Date(2022, 8, 1) },
 		project: 'Multiplayer Dynamics',
 		DOI: 'https://doi.org/10.1145/3544548.3580702',
-		funding: 'Game Research Grant'
+		funding: 'Game Research Grant',
+		awards: [{ name: "CHI '23 Best Paper Award" }]
 	},
 	{
 		slug: 'social-gaming',
