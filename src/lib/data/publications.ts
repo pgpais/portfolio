@@ -84,7 +84,7 @@ export const items: Array<Publication> = [
 		name: '"My Zelda Cane": Strategies Used by Blind Players to Play Visual-Centric Digital Games',
 		author: 'Co-Author',
 		description:
-			'Mainstream games are typically designed around the visual experience, with behaviors and interactions highly dependent on vision. Despite this, blind people are playing mainstream games while dealing with and overcoming inaccessible content, often together with friends and audiences. In this work, we analyze over 70 hours of YouTube videos, where blind content-creators play visual-centric games. We point out the various strategies employed by players to overcome barriers that permeate mainstream games. We reflect on ways to enable and improve blind players’ experience with these games, shedding light on the positive and negative consequences of apparently benign design choices. Our observations underline how game elements are appropriated for accessibility, the incidental consequences of audio design, and the trade-offs between accessibility, agency, and engagement.',
+			"Mainstream games are typically designed around the visual experience, with behaviors and interactions highly dependent on vision. Despite this, blind people are playing mainstream games while dealing with and overcoming inaccessible content, often together with friends and audiences. In this work, we analyze over 70 hours of YouTube videos, where blind content-creators play visual-centric games. We point out the various strategies employed by players to overcome barriers that permeate mainstream games. We reflect on ways to enable and improve blind players' experience with these games, shedding light on the positive and negative consequences of apparently benign design choices. Our observations underline how game elements are appropriated for accessibility, the incidental consequences of audio design, and the trade-offs between accessibility, agency, and engagement.",
 		venue: "CHI '23",
 		links: [{ to: 'https://arxiv.org/pdf/2301.08031', label: 'Read Paper', newTab: true }],
 		color: 'green',
@@ -92,7 +92,7 @@ export const items: Array<Publication> = [
 		skills: getSkills('qualitative'),
 		logo: Assets.Unknown,
 		shortDescription:
-			'We analyze over 70 hours of YouTube videos, where blind content-creators play visual-centric games. We point out the various strategies employed by players to overcome barriers that permeate mainstream games.',
+			"CHI '23 Best Paper award. We analyzed over 70 hours of YouTube videos, where blind content-creators play visual-centric games, and we pointed out the various strategies employed by players to overcome barriers that permeate mainstream games.",
 		period: { from: new Date(2022, 8, 1) },
 		project: 'Multiplayer Dynamics',
 		DOI: 'https://doi.org/10.1145/3544548.3580702',
