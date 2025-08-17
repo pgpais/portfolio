@@ -8,7 +8,7 @@ export const name = 'Pedro';
 export const lastName = 'Pais';
 
 export const description =
-	'Game developer specialising in cooperative and asymmetric play. Experienced in Unity and Godot with published research on game design and accessibility at top-tier conferences. Skilled in bridging technical development and design to create engaging multiplayer experiences.';
+	'Game developer specialised in cooperative and asymmetric play. Experienced in Unity and Godot with published research on game design and accessibility at top-tier conferences. Skilled in bridging technical development and design to create engaging multiplayer experiences.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{
