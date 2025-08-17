@@ -75,6 +75,13 @@
 					<UIcon icon="i-carbon-idea" classes="text-1.25em" />
 					{publication.venue}
 				</div>
+				{#if publication.presentation}
+					<CardDivider />
+					<div class="row items-center gap-2">
+						<UIcon icon="i-carbon-group-presentation" classes="text-1.25em" />
+						{publication.presentation.label}
+					</div>
+				{/if}
 				<CardDivider />
 			</div>
 			<div class="experience-description text-[0.9em]">

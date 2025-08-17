@@ -80,6 +80,7 @@ export interface Publication<S extends string = string> extends Project<S> {
 	funding?: string;
 	project: string;
 	DOI?: string;
+	presentation?: { label: string; url?: string };
 }
 
 export interface Education<S extends string = string> extends Item<S> {
