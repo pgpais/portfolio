@@ -11,7 +11,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'A framework derived from a multi-step systematic analysis of 129 cooperative games with contributions of eleven researchers. LFCG is published as a web application to facilitate use and appropriation. It supports the creation, dissemination and aggregation of game reports and specifications; and enables stakeholders to extend and publish custom versions.',
 		links: [
-			{ to: 'https://www.lfcooperativegames.com', label: 'Website' },
+			{ to: 'https://www.lfcooperativegames.com/reports/search', label: 'Website' },
 			{ to: 'https://github.com/pgpais/live-framework-for-cooperative-games', label: 'Source' }
 		],
 		logo: Assets.LFCG,
@@ -21,7 +21,16 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('svelte', 'ts', 'tailwind', 'supabase'),
 		type: 'Website',
-		screenshots: []
+		screenshots: [
+			{
+				label: 'Framework Interactive Overview',
+				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/lfcg-framework.png?raw=true'
+			},
+			{
+				label: 'Game Reports Search',
+				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/lfcg-games.png?raw=true'
+			}
+		]
 	},
 	{
 		slug: 'koala-boutique',
