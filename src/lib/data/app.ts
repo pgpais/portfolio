@@ -1,1 +1,1 @@
-export const titleSuffix = 'Pedro Pais\s Portfolio';
+export const titleSuffix = 'Pedro Pais\' Portfolio';
