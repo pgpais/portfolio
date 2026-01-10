@@ -25,6 +25,7 @@ export const items: Array<Publication> = [
 			'This study explores the intricate relationship between digital gaming and familial dynamics, investigating how gaming habits within households influence and are influenced by family interactions. Leveraging a thematic analysis approach, we examine discussions on Reddit gaming communities (139 posts along with top comment) related to gaming experiences within families.',
 		period: { from: new Date(2022, 3, 1) },
 		project: 'Blind Gaming',
+		DOI:'https://doi.org/10.1145/3760426',
 		funding: 'Accessibility Research Grant'
 	},
 	{
