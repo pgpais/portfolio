@@ -38,6 +38,39 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
+		slug: 'unity',
+		color: 'cyan',
+		description: '',
+		logo: Assets.Unity,
+		name: 'Unity',
+		category: 'game-dev'
+	}),
+	defineSkill({
+		slug: 'godot',
+		color: 'blue',
+		description: '',
+		logo: Assets.Godot,
+		name: 'Godot',
+		category: 'game-dev'
+	}),
+	defineSkill({
+		slug: 'csharp',
+		color: 'blue',
+		description: '',
+		logo: Assets.Csharp,
+		name: 'C#',
+		category: 'pro-lang'
+	}),
+
+	defineSkill({
+		slug: 'svelte',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Svelte,
+		name: 'Svelte',
+		category: 'library'
+	}),
+	defineSkill({
 		slug: 'c',
 		color: 'yellow',
 		description: '',
@@ -60,14 +93,6 @@ export const items = [
 		logo: Assets.Kotlin,
 		name: 'Kotlin',
 		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'godot',
-		color: 'blue',
-		description: '',
-		logo: Assets.Godot,
-		name: 'Godot',
-		category: 'game-dev'
 	}),
 	defineSkill({
 		slug: 'android',
@@ -118,28 +143,12 @@ export const items = [
 	// 	category: 'research'
 	// }),
 	defineSkill({
-		slug: 'csharp',
-		color: 'blue',
-		description: '',
-		logo: Assets.Csharp,
-		name: 'C#',
-		category: 'pro-lang'
-	}),
-	defineSkill({
 		slug: 'ts',
 		color: 'blue',
 		description: '',
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'unity',
-		color: 'cyan',
-		description: '',
-		logo: Assets.Unity,
-		name: 'Unity',
-		category: 'game-dev'
 	}),
 	defineSkill({
 		slug: 'supabase',
@@ -181,14 +190,6 @@ export const items = [
 		name: 'React Js',
 		category: 'library'
 	}),
-	defineSkill({
-		slug: 'svelte',
-		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		category: 'library'
-	})
 ] as const;
 
 export const title = 'Skills';
