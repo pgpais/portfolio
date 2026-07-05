@@ -19,7 +19,8 @@ const categories = [
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
 	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
 	defineSkillCategory({ name: 'Game Development', slug: 'game-dev' }),
-	defineSkillCategory({ name: 'Research', slug: 'research' })
+	defineSkillCategory({ name: 'Research', slug: 'research' }),
+	defineSkillCategory({ name: 'Platforms', slug: 'platform' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -84,7 +85,7 @@ export const items = [
 		description: '',
 		logo: Assets.Tailwind,
 		name: 'Tailwind',
-		category: 'framework'
+		category: 'library'
 	}),
 	defineSkill({
 		slug: 'kotlin',
@@ -100,7 +101,7 @@ export const items = [
 		description: '',
 		logo: Assets.Android,
 		name: 'Android',
-		category: 'pro-lang'
+		category: 'platform'
 	}),
 	defineSkill({
 		slug: 'java',
