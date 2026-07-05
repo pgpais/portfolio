@@ -78,11 +78,11 @@ export const items: Array<Project> = [
 			},
 			{
 				label: 'Manager Unlock Menu',
-				src: '/screenshots/manager-unlock.jpg'
+				src: '/screenshots/koala-boutique/manager-unlock.jpg'
 			},
 			{
 				label: 'Manager Processing Menu',
-				src: '/screenshots/manager-processing.jpg'
+				src: '/screenshots/koala-boutique/manager-processing.jpg'
 			}
 		],
 		contributions: [
