@@ -78,11 +78,11 @@ export const items: Array<Project> = [
 			},
 			{
 				label: 'Manager Unlock Menu',
-				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-unlock.jpg?raw=true'
+				src: '/screenshots/manager-unlock.png'
 			},
 			{
 				label: 'Manager Processing Menu',
-				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-processing.jpg?raw=true'
+				src: '/screenshots/manager-processing.png'
 			}
 		],
 		contributions: [
