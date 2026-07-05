@@ -1,7 +1,13 @@
 <script lang="ts">
 	import UIcon from '../Icon/UIcon.svelte';
 
-	export let screenshot: { src: string; label: string } | undefined = undefined;
+	type Screenshot = {
+		src: string;
+		label: string;
+		type?: 'image' | 'video';
+	};
+
+	export let screenshot: Screenshot | undefined = undefined;
 
 	export let onClose = () => {
 		screenshot = undefined;
@@ -41,10 +47,17 @@
 					<UIcon icon={'i-carbon-close'} />
 				</button>
 			</div>
-			<div
-				class="aspect-video col bg-contain w-100% rounded-xl bg-no-repeat bg-contains bg-center"
-				style={`background-image: url(${screenshot?.src});`}
-			/>
+			{#if screenshot?.type === 'video'}
+				<video class="aspect-video w-full rounded-xl" autoplay muted loop playsinline>
+					<source src={screenshot.src} type="video/webm" />
+				</video>
+			{:else}
+				<img
+					class="aspect-video w-100% rounded-xl object-contain"
+					src={screenshot?.src}
+					alt={screenshot?.label}
+				/>
+			{/if}
 			<p
 				class="font-italic m-t-auto m-x-auto bg-[var(--main-60)] border-solid border-1px border-[var(--border)] p-x-5 p-2 rounded-xl"
 			>

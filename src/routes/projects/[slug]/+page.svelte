@@ -88,37 +88,58 @@
 						</div>
 					{/if}
 				</div>
+				{#if data.project.contributions?.length}
+					<div class="px-10px my-6">
+						<ul class="mt-4 space-y-2">
+							{#each data.project.contributions as contribution}
+								<li class="text-[var(--secondary-text)]">
+									{contribution}
+								</li>
+							{/each}
+						</ul>
+					</div>
+				{/if}
 				<div class="w-100% m-t-8">
 					<CardDivider />
 				</div>
-				{#if screenshots.length > 0}
-					<div
-						class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-t-10"
-					>
-						{#each screenshots as item, index}
-							<!-- svelte-ignore a11y-no-static-element-interactions -->
-							<div
-								class="col-center gap-3 overflow-hidden w-100% h-100% rounded-10px"
-								on:click={() => (screenIndex = index)}
-								on:keydown
-								on:keypress
-								on:keyup
-								on:keyup
-							>
-								<div
-									class="screenshot aspect-video bg-contain w-100% cursor-pointer"
-									style={`background-image: url(${item.src});`}
-								/>
-								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
+				<div
+					class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-t-10"
+				>
+					{#each screenshots as item, index}
+						<!-- svelte-ignore a11y-no-static-element-interactions -->
+						<div
+							class="col-center gap-3 overflow-hidden h-100% rounded-10px"
+							on:click={() => (screenIndex = index)}
+							on:keydown
+							on:keypress
+							on:keyup
+						>
+							<div class="aspect-video overflow-hidden rounded-xl bg-[var(--secondary)]">
+								{#if item.type === 'video'}
+									<video
+										class="w-full h-full object-cover transition-transform duration-200 hover:scale-110"
+										autoplay
+										muted
+										loop
+										playsinline
+									>
+										<source src={item.src} type="video/webm" />
+									</video>
+								{:else}
+									<img
+										class="w-full h-full object-cover transition-transform duration-200 hover:scale-110"
+										src={item.src}
+										alt={item.label}
+									/>
+								{/if}
 							</div>
-						{/each}
-					</div>
-				{:else}
-					<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
-						<UIcon icon="i-carbon-image" classes="text-3.5em" />
-						<p class="font-300">No screenshots</p>
-					</div>
-				{/if}
+
+							<p class="text-[var(--tertiary-text)] font-300">
+								{item.label}
+							</p>
+						</div>
+					{/each}
+				</div>
 			</div>
 		</div>
 	{/if}

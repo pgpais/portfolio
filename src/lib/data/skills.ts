@@ -89,9 +89,9 @@ export const items = [
 		slug: 'game-design',
 		color: 'yellow',
 		description: '',
-		logo: Assets.JavaScript,
-		name: 'JavaScript',
-		category: 'pro-lang'
+		logo: Assets.Unknown,
+		name: 'Game Design',
+		category: 'game-dev'
 	}),
 	defineSkill({
 		slug: 'python',

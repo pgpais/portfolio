@@ -31,7 +31,7 @@ export interface Item<S extends string = string> {
 	logo: Asset;
 	shortDescription: string;
 	description: string;
-	screenshots?: Array<{ src: string; label: string }>;
+	screenshots?: Array<{ src: string; label: string, type?: 'image' | 'video' }>;
 }
 
 export interface Link {
@@ -64,6 +64,7 @@ export interface Project<S extends string = string> extends Item<S> {
 	type: string;
 	skills: Array<Skill<S>>;
 	awards?: Array<{ name: string; url?: string }>;
+	contributions?: Array<string>;
 }
 
 export interface Experience<S extends string = string> extends Project<S> {

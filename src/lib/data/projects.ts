@@ -4,6 +4,135 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
+		slug: 'noise-panic',
+		color: 'mediumslateblue',
+		description:
+			"A cooperative 3D roguelike built in Godot where communication is the primary challenge. Players are divided into asymmetric roles: part of the team pilots a spaceship, coordinating the mission from orbit, while the rest of the squad explores the planet's surface to gather resources, fights enemies and completes objectives. I am responsible for the game's implementation, implementing a mostly server-authoritative networking model with delegated authority for player-controlled objects, RPC-based gameplay interactions, Steamworks integration through GodotSteam, enemy AI and navigation systems, and the game's core gameplay systems.",
+		shortDescription:
+			'A cooperative 3D roguelike built in Godot, featuring asymmetric gameplay and a server-authoritative multiplayer architecture.',
+		links: [
+			// Add links when available
+			// { to: 'https://store.steampowered.com/app/...', label: 'Steam' },
+			// { to: 'https://github.com/...', label: 'GitHub' }
+		],
+		logo: Assets.NoisePanic,
+		name: 'Noise Panic (WIP)',
+		period: {
+			from: new Date(2026, 0, 1)
+		},
+		skills: getSkills(
+			'godot',
+			'csharp',
+			'multiplayer',
+			'steamworks',
+			'ai',
+			'game-design',
+			'gameplay-programming'
+		),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'In Editor Screenshot',
+				src: '/screenshots/noise-panic/in-editor.png'
+			},
+		],
+		contributions: [
+			'Designing gameplay systems for two asymmetric player roles, ship crew and surface explorers, requiring synchronized interactions across independent but interdependent experiences.',
+			'Designing and implementing a server-authoritative multiplayer architecture with delegated authority for player-controlled objects, ensuring smooth and synchronized gameplay across clients.',
+			'Integrating Steamworks through GodotSteam, implementing lobby creation and multiplayer session management.',
+
+
+		]
+	},
+	{
+		slug: 'koala-boutique',
+		color: 'orangered',
+		description:
+			"An asymmetric cooperative game developed in Unity where one player explores dangerous dungeons while another manages a fantasy shop from a mobile device. The two gameplay experiences are synchronized in real time, requiring constant cooperation to progress. Originally developed as part of my Master's research into family-oriented cooperative play. I was the sole developer responsible for programming all gameplay systems.",
+		shortDescription:
+			'Asynchronous Cooperative game made in Unity with two modules, a Roguelike module played on PC and a Manager module played on Mobile.',
+		links: [
+			{ to: 'https://techpeople.itch.io/koala-boutique', label: 'Itch.io' },
+			{ to: 'https://github.com/pgpais/Koala-Boutique-Adventurer', label: 'Adventurer Github' },
+			{
+				to: 'https://play.google.com/store/apps/details?id=com.techpeople.familyPlay',
+				label: 'Play Store'
+			},
+			{ to: 'https://github.com/pgpais/Koala-Boutique-Parent', label: 'Manager Github' }
+		],
+		logo: Assets.Koala,
+		name: 'Koala Boutique',
+		period: {
+			from: new Date(2021, 0, 1)
+		},
+		skills: getSkills('unity', 'csharp', 'game-design'),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'Adventurer Main Menu',
+				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTMxLnBuZw==/original/i%2BUBuP.png'
+			},
+			{
+				label: 'Adventurer Gameplay',
+				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTQwLnBuZw==/original/cCUUJi.png'
+			},
+			{
+				label: 'Manager Unlock Menu',
+				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-unlock.jpg?raw=true'
+			},
+			{
+				label: 'Manager Processing Menu',
+				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-processing.jpg?raw=true'
+			}
+		],
+		contributions: [
+			'Designed and implemented the complete gameplay architecture for both the Adventurer and Manager applications.',
+			'Built an event-driven synchronization layer using Firebase to keep two independently running games synchronized in real time.'	,
+			'Developed gameplay systems including inventory, crafting, economy, progression, quests and shop.',
+			'Extended the TopDown Engine with custom systems supporting the project\'s asymmetric cooperative gameplay.',
+		]
+	},
+	{
+		slug: 'dextra',
+		color: 'deepskyblue',
+		description:
+			"An arcade-style puzzle game developed in Unity where the player can only rotate to the right. The game challenges players to master timing, dexterity and spatial awareness through increasingly complex levels. I contributed to the core gameplay implementation, including player movement, gameplay systems, interactive objects and level design tooling, helping create a smooth iteration workflow during development.",
+		shortDescription:
+			'Arcade-style puzzle game developed in Unity where the player can only turn right.',
+		links: [
+			{
+				to: 'https://kipset.itch.io/dextra',
+				label: 'Itch.io'
+			}
+		],
+		logo: Assets.Dextra,
+		name: 'Dextra',
+		period: {
+			from: new Date(2020, 0, 1)
+		},
+		skills: getSkills(
+			'unity',
+			'csharp',
+			'game-design',
+			'gameplay-programming',
+			'tool-development'
+		),
+		type: 'Game',
+		screenshots: [
+			{
+				label: 'Gameplay',
+				src: '/screenshots/dextra/dextra-gameplay-gif.webm',
+				type: 'video'
+			}
+		],
+		contributions: [
+			'Implemented the player controller and movement mechanics centered around the game\'s \"turn right only\" core mechanic.',
+			'Designed modular gameplay components for hazards, collectibles and interactive objects using Unity\'s component-based architecture, enabling rapid creation of new gameplay elements.',
+			'Developed editor tools that streamlined level creation and reduced iteration time for designers.',
+			'Collaborated closely with designers to prototype and refine puzzle mechanics and overall game feel.'
+		]
+	},
+	{
 		slug: 'lfcg',
 		color: 'cyan',
 		description:
@@ -29,48 +158,6 @@ export const items: Array<Project> = [
 			{
 				label: 'Game Reports Search',
 				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/lfcg-games.png?raw=true'
-			}
-		]
-	},
-	{
-		slug: 'koala-boutique',
-		color: 'orangered',
-		description:
-			"An asynchronous cooperative game made in Unity in the context of my master's thesis regarding constraints in playing with the family. It consists of two modules: a Roguelike module played on PC and a Manager module played on Mobile. The game is designed to be played by a parent and a child, where the parent manages the shop and the child goes on adventures to collect items.",
-		shortDescription:
-			'Asynchronous Cooperative game made in Unity with two modules, a Roguelike module played on PC and a Manager module played on Mobile.',
-		links: [
-			{ to: 'https://techpeople.itch.io/koala-boutique', label: 'Itch.io' },
-			{ to: 'https://github.com/pgpais/Koala-Boutique-Adventurer', label: 'Adventurer Github' },
-			{
-				to: 'https://play.google.com/store/apps/details?id=com.techpeople.familyPlay',
-				label: 'Play Store'
-			},
-			{ to: 'https://github.com/pgpais/Koala-Boutique-Parent', label: 'Manager Github' }
-		],
-		logo: Assets.Koala,
-		name: 'Koala Boutique',
-		period: {
-			from: new Date(2021, 0, 1)
-		},
-		skills: getSkills('unity', 'csharp', 'game-design', 'game-development'),
-		type: 'Game',
-		screenshots: [
-			{
-				label: 'Adventurer Main Menu',
-				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTMxLnBuZw==/original/i%2BUBuP.png'
-			},
-			{
-				label: 'Adventurer Gameplay',
-				src: 'https://img.itch.zone/aW1hZ2UvMTE5NzQzMC82OTg2MTQwLnBuZw==/original/cCUUJi.png'
-			},
-			{
-				label: 'Manager Unlock Menu',
-				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-unlock.jpg?raw=true'
-			},
-			{
-				label: 'Manager Processing Menu',
-				src: 'https://github.com/pgpais/portfolio/blob/master/screenshots/manager-processing.jpg?raw=true'
 			}
 		]
 	},
