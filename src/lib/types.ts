@@ -65,6 +65,7 @@ export interface Project<S extends string = string> extends Item<S> {
 	skills: Array<Skill<S>>;
 	awards?: Array<{ name: string; url?: string }>;
 	contributions?: Array<string>;
+	role?: string;
 }
 
 export interface Experience<S extends string = string> extends Project<S> {

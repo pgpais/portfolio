@@ -84,6 +84,7 @@ const Assets = {
 	novasst: a('nova-sst.jpg'),
 	Dextra: a('dextra.png'),
 	NoisePanic: a('noise-panic.png'),
+	Boioshies: a('boioshies.png'),
 };
 
 export default Assets;

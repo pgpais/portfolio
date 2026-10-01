@@ -4,7 +4,33 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
+		slug: 'boioshies',
+		name: 'Boioshies (Ongoing)',
+		role: 'Lead Programmer',
+		color: 'mediumslateblue',
+		description:
+		"In this two player co-op campaign, puzzle game with precision inputs and at times infuriating challenges you and your play partner will take control of Boio and Oshie. Together Boio and Oshi will face the 10 trials of each of the 20 Boishie Gods to earn their place as rightful by their side.",
+		shortDescription:
+		'Physics based co-op puzzle game with precision inputs and at times infuriating challenges.',
+		links: [
+			{to: 'https://store.steampowered.com/app/5320020', label: 'Steam' },
+		],
+		logo: Assets.Boioshies,
+		skills: getSkills('godot', 'csharp', 'game-design', 'game-development', 'steamworks', 'multiplayer', 'networking', 'gameplay-programming'),	
+		type: 'Game',
+		period: {
+			from: new Date(2026, 8, 1)
+		},
+		screenshots: [
+			{
+				label: 'Mockup',
+				src: '/screenshots/boioshies/boioshies_mockup.jpg'
+			},
+		],	
+	},
+	{
 		slug: 'noise-panic',
+		role: 'Lead Programmer',
 		color: 'mediumslateblue',
 		description:
 			"A cooperative 3D roguelike built in Godot where communication is the primary challenge. Players are divided into asymmetric roles: part of the team pilots a spaceship, coordinating the mission from orbit, while the rest of the squad explores the planet's surface to gather resources, fights enemies and completes objectives. I am responsible for the game's implementation, implementing a mostly server-authoritative networking model with delegated authority for player-controlled objects, RPC-based gameplay interactions, Steamworks integration through GodotSteam, enemy AI and navigation systems, and the game's core gameplay systems.",
@@ -16,7 +42,7 @@ export const items: Array<Project> = [
 			// { to: 'https://github.com/...', label: 'GitHub' }
 		],
 		logo: Assets.NoisePanic,
-		name: 'Noise Panic (WIP)',
+		name: 'Noise Panic (Canceled)',
 		period: {
 			from: new Date(2026, 0, 1)
 		},
@@ -46,6 +72,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'koala-boutique',
+		role: 'Lead Programmer, Designer',
 		color: 'orangered',
 		description:
 			"An asymmetric cooperative game developed in Unity where one player explores dangerous dungeons while another manages a fantasy shop from a mobile device. The two gameplay experiences are synchronized in real time, requiring constant cooperation to progress. Originally developed as part of my Master's research into family-oriented cooperative play. I was the sole developer responsible for programming all gameplay systems.",
@@ -94,6 +121,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'dextra',
+		role: 'Gameplay Programmer',
 		color: 'deepskyblue',
 		description:
 			"An arcade-style puzzle game developed in Unity where the player can only rotate to the right. The game challenges players to master timing, dexterity and spatial awareness through increasingly complex levels. I contributed to the core gameplay implementation, including player movement, gameplay systems, interactive objects and level design tooling, helping create a smooth iteration workflow during development.",
@@ -134,6 +162,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'lfcg',
+		role: 'Lead Programmer',
 		color: 'cyan',
 		description:
 			'A framework derived from a multi-step systematic analysis of 129 cooperative games with contributions of eleven researchers. LFCG is published as a web application to facilitate use and appropriation. It supports the creation, dissemination and aggregation of game reports and specifications; and enables stakeholders to extend and publish custom versions.',
@@ -146,7 +175,7 @@ export const items: Array<Project> = [
 		logo: Assets.LFCG,
 		name: 'Living Framework for Understanding Cooperative Games',
 		period: {
-			from: new Date()
+			from: new Date(2025, 0, 1)
 		},
 		skills: getSkills('svelte', 'ts', 'tailwind', 'supabase'),
 		type: 'Website',
@@ -163,6 +192,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'roboto-repairaton',
+		role: 'Gameplay Programmer',
 		color: 'orange',
 		description:
 			'Global Game Jam 2020 entry. A cooperative game where players must work together through chaos and collisions to assemble the required robot. I implemented most of the gameplay features and the chaos event system (flashing lights and fast moving conveyor belts, for example). ',
@@ -196,6 +226,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'flamehound',
+		role: 'Programmer',
 		color: 'orange',
 		description:
 			'Bachelor final project. In this project we had to develop a service where civilians could report fires (and their degree of severity). This project had three fronts. The server was developed in Java (with the help of Google App Engine), the browser Front-end was developed in ReactJS, we also built a mobile app for Android ',
@@ -213,6 +244,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'insection',
+		role: 'Gameplay Programmer',
 		color: 'orange',
 		description:
 			'Global Game Jam 2018 entry. "The President has the Nuclear Launch Codes, and you\'re going to steal them! We have developed a special nanobot which can decode brain signals and *transmit* them to you, at a safe location." In this jam we made a typing game projected on the back of the mosquito nanobot. It was my first time contacting with FMod and rendering camera views on textures.',
@@ -245,6 +277,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'reis-de-portugal',
+		role: 'Gameplay Programmer',
 		color: 'gray',
 		description:
 			"Games for Good 2017 entry - Third place. My first time entering a socially responsible Game Jam. It was a good experience, however we overscoped the game and ended up not doing much. The idea was to develop a card game where each card is a historic person that you'd acquire after visiting historically relevant sites.",
@@ -272,6 +305,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'manbat',
+		role: 'Gameplay Programmer',
 		color: 'red',
 		description:
 			'Global Game Jam 2017 entry. "A 2D side-scroller where you only see sound. Daredevil style." I implemented most of the gameplay in this platformer Jam entry.',

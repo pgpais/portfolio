@@ -42,6 +42,13 @@
 	</div>
 	<CardDivider />
 	<div class="col m-b-15px justify-between text-[var(--secondary-text)] text-0.85em">
+		{#if project.role}
+			<div class="row items-center gap-2">
+				<UIcon icon="i-carbon-user" classes="text-1.25em" />
+				<p>{project.role}</p>
+			</div>
+			<CardDivider />
+		{/if}
 		<div class="row items-center gap-2">
 			<UIcon icon="i-carbon-assembly-cluster" classes="text-1.25em" />
 			<p>{project.type}</p>
@@ -52,26 +59,26 @@
 			<p>{project.period.from.getFullYear()}</p>
 		</div>
 		<CardDivider />
-	</div>
-	<div class="col">
-		<p class="text-[0.9em] text-[var(--secondary-text)] m-t-20px m-b-40px flex-1 line-clamp-5">
-			{project.shortDescription}
-		</p>
-	</div>
-	<!-- <div class="row justify-between text-0.8em font-400">
+		<div class="col">
+			<p class="text-[0.9em] text-[var(--secondary-text)] m-t-20px m-b-40px flex-1 line-clamp-5">
+				{project.shortDescription}
+			</p>
+		</div>
+		<!-- <div class="row justify-between text-0.8em font-400">
 		<Chip>{from}</Chip>
 		{#if from !== to}
 			<Chip>{to}</Chip>
 		{/if}
 	</div> -->
-	<CardDivider />
-	<div class="row flex-wrap">
-		{#each project.skills as tech}
-			<ChipIcon
-				logo={getAssetURL(tech.logo)}
-				name={tech.name}
-				href={`${base}/skills/${tech.slug}`}
-			/>
-		{/each}
-	</div>
-</Card>
+		<CardDivider />
+		<div class="row flex-wrap">
+			{#each project.skills as tech}
+				<ChipIcon
+					logo={getAssetURL(tech.logo)}
+					name={tech.name}
+					href={`${base}/skills/${tech.slug}`}
+				/>
+			{/each}
+		</div>
+	</div></Card
+>

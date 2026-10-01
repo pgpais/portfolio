@@ -49,6 +49,20 @@
 
 			return isFiltered && isSearched;
 		});
+
+		displayed.sort((a, b) => {
+			const aFrom = a.period.from.getTime();
+			const bFrom = b.period.from.getTime();
+
+			if (aFrom === bFrom) {
+				const aTo = a.period.to?.getTime() ?? new Date(Date.now() + 1000 * 60 * 60 * 24).getTime();
+				const bTo = b.period.to?.getTime() ?? new Date(Date.now() + 1000 * 60 * 60 * 24).getTime();
+
+				return bTo - aTo;
+			}
+
+			return bFrom - aFrom;
+		});
 	}
 
 	const onSearch = (e: CustomEvent<{ search: string }>) => {
