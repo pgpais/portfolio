@@ -26,6 +26,11 @@ export const items: Array<Project> = [
 				label: 'Mockup',
 				src: '/screenshots/boioshies/boioshies_mockup.jpg'
 			},
+		],
+		contributions: [
+			'Implemented the game\'s core gameplay objects. Such as the TargetBalls and Pockets',
+			'Integrated the game with steamworks',
+			'Implementing the game\'s networking solution, leveraging GodotSteam plugin'
 		],	
 	},
 	{
