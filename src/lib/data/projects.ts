@@ -141,7 +141,7 @@ export const items: Array<Project> = [
 		logo: Assets.Dextra,
 		name: 'Dextra',
 		period: {
-			from: new Date(2020, 0, 1)
+			from: new Date(2025, 0, 1)
 		},
 		skills: getSkills(
 			'unity',
