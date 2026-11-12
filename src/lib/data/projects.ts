@@ -47,7 +47,7 @@ export const items: Array<Project> = [
 			// { to: 'https://github.com/...', label: 'GitHub' }
 		],
 		logo: Assets.NoisePanic,
-		name: 'Noise Panic (Canceled)',
+		name: 'Noise Panic (Discontinued)',
 		period: {
 			from: new Date(2026, 0, 1)
 		},
