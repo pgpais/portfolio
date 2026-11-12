@@ -39,19 +39,19 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
-		slug: 'unity',
-		color: 'cyan',
-		description: '',
-		logo: Assets.Unity,
-		name: 'Unity',
-		category: 'game-dev'
-	}),
-	defineSkill({
 		slug: 'godot',
 		color: 'blue',
 		description: '',
 		logo: Assets.Godot,
 		name: 'Godot',
+		category: 'game-dev'
+	}),
+	defineSkill({
+		slug: 'unity',
+		color: 'cyan',
+		description: '',
+		logo: Assets.Unity,
+		name: 'Unity',
 		category: 'game-dev'
 	}),
 	defineSkill({
